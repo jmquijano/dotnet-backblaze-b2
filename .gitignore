@@ -44,3 +44,5 @@ msbuild.wrn
 
 appsettings.*.json
 appsettings.json
+
+!appsettings.*.sample.json
