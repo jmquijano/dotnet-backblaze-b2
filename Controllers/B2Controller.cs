@@ -15,22 +15,6 @@ namespace BackblazeB2.Controllers
 		{
 		}
 		
-		/// GET /test
-		/// <summary>
-		/// Test Endpoint
-		/// </summary>
-		/// <returns></returns>
-		[HttpGet]
-		[Route("test")] 
-		[Produces("application/json")]
-		[ProducesResponseType((int) HttpStatusCode.Accepted)]
-		[ProducesResponseType((int) HttpStatusCode.InternalServerError)]
-		public IActionResult TestEndpoint()
-		{
-			// Return a success response.
-			return Success((int) HttpStatusCode.Accepted, "Successfully connected to Backblaze.");
-		}
-		
 		/// GET /buckets
 		/// <summary>
 		/// List all list of Buckets
